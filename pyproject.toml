@@ -1,0 +1,20 @@
+[pyproject.toml]
+[tool.poetry]
+name = "image_processor"
+version = "0.1.0"
+description = "Um pacote Python para processamento de imagens com extração de canais RGB e CLAHE"
+authors = ["Seu Nome <seuemail@example.com>"]
+license = "MIT"
+packages = [
+    { include = "image_processor", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Pillow = ">=9.0.0"  # Atualizado para versão mais recente
+numpy = ">=1.21.0"
+opencv-python = ">=4.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
